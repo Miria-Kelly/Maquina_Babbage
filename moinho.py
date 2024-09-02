@@ -1,7 +1,6 @@
-import armazen, impressora
+import armazen
 valores_carregados = []
-valor = 0
-#def decifrar(codigo, posicao, numero):
+
 def carregar(posicao):
     num = armazen.carregar(posicao)
     valores_carregados.append(num)
