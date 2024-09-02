@@ -27,7 +27,8 @@ for c in range(0,len(codigo)):
         valor = str(valor)
 
         impressora.escrever(valor)
-
+        
+#fechando cartao.out so quando o programa finalizar por completo
 impressora.cartao.close()
 
 
