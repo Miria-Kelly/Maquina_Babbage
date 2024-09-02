@@ -5,3 +5,5 @@ def armazenar(valor, posicao):
 
 def carregar(posicao):
     return memoria[posicao]
+
+

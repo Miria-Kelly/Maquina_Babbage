@@ -1,4 +1,5 @@
 cartao = open('cartao.out', 'w')
+memoria_out = [0] * 16
 def escrever(valor):
 
     o_que_falta = 4 - (len(valor) % 4)
