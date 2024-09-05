@@ -1,54 +1,28 @@
 import armazen
 valores_carregados = []
 
+resultado = 0
+
 def carregar(posicao):
+    global valores_carregados
     num = armazen.carregar(posicao)
     valores_carregados.append(num)
 
-    return valores_carregados
-
 def somar():
+    global resultado
     resultado = valores_carregados[0] + valores_carregados[1]
     return resultado
 
 def subtrair ():
+    global resultado
     resultado = (valores_carregados[0] - valores_carregados[1])
     return resultado
 
 def multiplicar():
+    global resultado
     resultado = valores_carregados[0] * valores_carregados[1]
     return resultado
 
-def armazenar_resultado(resultado, posicao):
-    return armazen.armazenar(resultado, posicao)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-"""def LOADOP(valor, posicao):
-    #carrega valor na posicao da memoria fornecida
-
-def ADD(a, b):
-    #soma dois operadnos que foram carregados no moinho
-
-def SUB(a, b):
-    #subtrai os dois valores que foram carregados no moinho
-
-def MUL(a, b):
-    #multiplica  os dois valores que forams careegados no moinho
-
-def STORE(resultado):
-    #armazena o resultado ultima operaçao realizada no moinho
-
-def PRINT(valor):
-    #escreve o conteudo da posicao dada do armazem"""
+def armazenar_resultado(posicao):
+    global resultado
+    armazen.armazenar(resultado, posicao)
