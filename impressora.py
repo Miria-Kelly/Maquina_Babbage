@@ -1,11 +1,9 @@
 cartao = open('cartao.out', 'w')
 def escrever(valor):
-
-    o_que_falta = 4 - (len(valor) % 4)
+    while len(valor) <8:
+        valor = "O" + valor
     cartao.write("OOOO OOOO ")
-    if o_que_falta != 0:
-        for c in range(0, o_que_falta):
-            valor = '0' + valor
+    
     for c in valor:
         if c == '1':
             valor = valor.replace("1", "X")
