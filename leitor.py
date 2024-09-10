@@ -10,7 +10,7 @@ def ler_cartao(cartao_entrada):
                 linhas = linhas.replace("O", "0")
         cont = 0
         tam = len(linhas.split())
-        if tam > 4:
+        if tam > 4: #se tiver mais que quatro instrucoes?
             linhas = linhas.split('\n')
             linhas2 = []
             for c in range(0,len(linhas)):

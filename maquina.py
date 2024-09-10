@@ -1,6 +1,9 @@
 import leitor, moinho, armazen, impressora
+
 resultado = []
+
 codigo, posicao, numeros = (leitor.ler_cartao("cartao.in"))
+
 for c in range(0,len(codigo)):
     if codigo[c] == "0001":
         memoria = armazen.armazenar(numeros[c], posicao[c])
@@ -19,7 +22,7 @@ for c in range(0,len(codigo)):
         resultado.append(multi)
 
     elif codigo[c] == "0110":
-        moinho.armazenar_resultado(resultado[0], posicao[c])
+        moinho.armazenar_resultado(posicao[c])
 
     elif codigo[c] == "0111":
         valor = armazen.carregar(posicao[c])
