@@ -43,7 +43,7 @@ def ligar_maquina():
             valor = str(valor)
 
             impressora.escrever(valor, arquivo_saida)
-        
+
 configurar("cartao.in", "cartao.out")
 ligar_maquina()
 
