@@ -14,7 +14,7 @@ def configurar(nome_arquivo_entrada = 'cartao.in', nome_arquivo_saida = 'cartao.
 def ligar_maquina():
 
     codigo, posicao, numeros = leitor.ler_cartao(arquivo_entrada)
-
+   
     resultado = []
 
     for c in range(0,len(codigo)):

@@ -19,5 +19,6 @@ def escrever(valor, nome_arquivo_saida):
             cartao.write(c)
             if cont % 4 == 0 and cont != tam:
                 cartao.write(' ')
+                
         cartao.write('\n')
 
