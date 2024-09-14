@@ -10,6 +10,7 @@ def ler_cartao(cartao_entrada):
                 linhas = linhas.replace("O", "0")
         cont = 0
         tam = len(linhas.split())
+        
         if tam > 4: #se tiver mais que quatro instrucoes?
             linhas = linhas.split('\n')
             linhas2 = []
@@ -36,7 +37,7 @@ def ler_cartao(cartao_entrada):
                 numeros_convertidos.append(int(sublista, 2))
 
             return codigo, posicao_convertida, numeros_convertidos
-
+        
         else:
             linhas = linhas.split()
             codigo = linhas[0]

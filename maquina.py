@@ -12,12 +12,11 @@ def configurar(nome_arquivo_entrada = 'cartao.in', nome_arquivo_saida = 'cartao.
 
 
 def ligar_maquina():
-
     codigo, posicao, numeros = leitor.ler_cartao(arquivo_entrada)
-
     resultado = []
+    limpar_arquivo = True
 
-    for c in range(0,len(codigo)):
+    for c in range(0, len(codigo)):
         if codigo[c] == "0001":
             memoria = armazen.armazenar(numeros[c], posicao[c])
 
@@ -41,9 +40,9 @@ def ligar_maquina():
             valor = armazen.carregar(posicao[c])
             valor = bin(valor)[2:]
             valor = str(valor)
+            impressora.escrever(valor, arquivo_saida, limpar_arquivo)
+            limpar_arquivo = False  
 
-            impressora.escrever(valor, arquivo_saida)
 
 configurar("cartao.in", "cartao.out")
 ligar_maquina()
-
