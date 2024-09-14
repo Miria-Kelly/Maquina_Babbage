@@ -26,7 +26,6 @@ def ler_cartao(cartao_entrada):
                 codigo.append(c[0])
                 posicao.append(c[1])
                 numeros.append(c[2:])
-            print(codigo, posicao, numeros)
             numeros_convertidos = []
             posicao_convertida = []
             numeros1 = [''.join(sublista) for sublista in numeros]
