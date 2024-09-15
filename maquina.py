@@ -1,3 +1,6 @@
+#Miria Kelly da Silva Santos
+#Heloisa Albuquerque Peixoto
+
 import leitor, moinho, armazen, impressora
 
 arquivo_entrada = "cartao.in"
