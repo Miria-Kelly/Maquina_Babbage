@@ -1,5 +1,7 @@
 #Miria Kelly da Silva Santos
-#Heloisa Peixoto de Albuquerque
+=======
+#Maria Heloisa Peixoto de Albuquerque
+>>>>>>> 595bac4aa42779367aa6bc4195bbdb2ad507ac34
 
 import leitor, moinho, armazen, impressora
 
