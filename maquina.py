@@ -1,5 +1,5 @@
 #Miria Kelly da Silva Santos
-#Heloisa Albuquerque Peixoto
+#Heloisa Peixoto de Albuquerque
 
 import leitor, moinho, armazen, impressora
 
